@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jquery</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <style>
+    form {
+      padding: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <form action="">
+    <input type="text" id="inputText">
+    <input type="submit" name="" id="">
+  </form>
+
+  <img
+    src="https://images.unsplash.com/photo-1719937050446-a121748d4ba0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw2fHx8ZW58MHx8fHx8"
+    alt="">
+  <h1>belajar jquery</h1>
+  <div id="box1">Box satu</div>
+
+  <div class="boxes">Baris Pertama</div>
+  <div class="boxes">Baris Kedua</div>
+  <div class="boxes">Baris Kedua Koma Lima</div>
+  <div class="boxes">Baris Ketiga</div>
+
+  <div class="ess">Semangat Mughni Ayooo</div>
+
+  <script>
+    // mengambil dan mengubah element html
+    $('form').submit(() => {
+      let tulisan =$('#inputText').val()
+      $('h1').text(tulisan)
+      
+      // menjegah sifat rilot di jquery
+      event.preventDefault();
+    })
+
+
+    // memastikan file sudah berjalan dengan lancar dengan sempurna
+    $(document).ready(function () {
+      $('h1').css('color', 'blue')
+      $('#box1').css('font-size', '30px')
+      $('.boxes').css('text-align', 'center')
+      $('.boxes:first').css('color', 'blue')
+      $('.boxes:last').css('color', 'aqua')
+      $('.boxes:eq(2)').css('color', 'tomato')
+
+
+      $('.ess').css({
+        'background': 'red',
+        'padding': '1rem'
+      })
+
+
+      // lanjut event
+      $('h1').click(function () {
+        $('h1').css({
+          'color': 'red',
+          'background': 'blue',
+          'padding': '1rem',
+          'text-align': 'center',
+          'font-size': '3rem'
+        });
+      })
+      $('h1').mouseenter(function () {
+        $('h1').css({
+          'color': 'red',
+          'background': 'black',
+          'padding': '1rem',
+          'text-align': 'center',
+          'font-size': '3rem'
+        });
+      })
+      $('.boxes').mouseleave(function () {
+        $(this).css({
+          'color': 'red',
+          'padding': '1rem',
+          'text-align': 'center',
+          'font-size': '3rem'
+        });
+      })
+
+
+
+    });
+
+  </script>
+</body>
+
+</html>

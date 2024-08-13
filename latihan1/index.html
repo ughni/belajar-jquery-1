@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      background: blue;
+      color: white;
+      height: 100px;
+      width: 150px;
+    }
+
+    div.contextmenu {
+      background: yellow;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="target">
+    Right-click here
+  </div>
+
+  <script>
+   
+$( "#target" ).on( "contextmenu", function() {
+  alert( "Handler for `contextmenu` called." );
+} );
+  </script>
+
+</body>
+
+</html>

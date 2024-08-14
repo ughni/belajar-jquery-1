@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <h1>Selamat Datang Semua</h1>
+
+  <table border="1">
+    <tr>
+      <th>NO</th>
+      <th>Nama</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Berglunds snabbköp</td>
+      <td>Sweden</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Mexico</td>
+    </tr>
+    <tr>
+      <td>Ernst Handel</td>
+      <td>Austria</td>
+    </tr>
+    <tr>
+      <td>Island Trading</td>
+      <td>UK</td>
+    </tr>
+  </table>
+
+  <p>heloo kawan</p>
+  <script>
+    // warna atas
+    $(document).ready(() => {
+      $('tr:even').css('background-color', 'yellow')
+      $('p').dblclick(()=> {$(this).hide()})
+    })
+
+    // warna bawah
+    $(document).ready(() => {
+      $('tr:odd').css('background-color', 'tomato')
+    })
+  </script>
+</body>
+
+</html>

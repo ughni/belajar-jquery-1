@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Latihan 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <h1>Mughni</h1>
+  <p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus blanditiis eos voluptatem maxime laborum!
+    Beatae
+    quam reprehenderit ratione hic, illo dicta voluptatibus vero dolorum accusamus, quos exercitationem aliquid minima
+    aspernatur.</p>
+
+  <div class="title">
+    <h1 class="nav">Semangat Pagi Anda</h1>
+    <p>semangat mughni yok bisaa</p>
+  </div>
+
+
+  <h2>ini sebuah judul</h2>
+
+  <p>thist paragraf</p>
+  <p>semangat maju kalian</p>
+  <p><a href="">Oke Lah</a></p>
+  <p><a href="">Semangat Oke</a></p>
+  <!-- <button class="submit">Click Saya</button> -->
+  <button class="Tombol">tombol</button>
+
+
+  <h2>Belajar terus</h2>
+  <p class="p-info">eyaaa</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores impedit ipsa provident. Animi, repellat sapiente
+    atque distinctio temporibus, totam, magnam magni ducimus fuga amet qui nesciunt eius! Voluptas, aut animi!</p>
+  <button class="btn">Click he</button>
+  <script src="my_jquery_functions.js">
+
+    $(document).ready(()=> {
+      $('.btn').click(function () {
+        $("p-info").hide();
+      })
+    })
+
+
+    $('.Tombol').click(() => {
+      $(this).hide();
+    });
+
+
+    $('.submit').click(() => {
+      $('*').hide();
+    });
+    //   $(document).ready(() => {
+    //     $("button").click(() => {
+    //       $("[href]").hide();
+    //   })
+    // }),
+    $('.title').css({ 'font-size': '90px', 'text-align': 'center', 'font-weight': 'bold', 'font-family': 'Courier', 'background': 'blue', 'padding': '2rem', 'color': 'white' })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <h1>Produktif Satu</h1>
+  <button id="hilang">hilang</button>
+  <button id="muncul">muncul</button>
+
+
+  <script>
+    $(document).ready(function() {
+      $('#hilang').click(function() {
+        $('h1').hide(1000)
+      });
+      $("#muncul").click(() => {
+        $('h1').show(1000)
+      })
+    })
+  </script>
+</body>
+
+</html>

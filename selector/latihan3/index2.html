@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+name: <input type="text" name="fullname"><br>
+email: <input type="email" name="email" id=""> 
+
+<p>Semangat Siang</p>
+<p>Semangat Siang</p>
+<p>Semangat Siang</p>
+
+<h2 class="title">Heloo</h2>
+<script>
+  $(document).ready(()=> {
+$(".title").on({
+  mouseenter: function(){
+    $(this).css('background-color', 'lightgray');
+  },
+  mouseleave: function() {
+    $(this).css('background-color', 'lightblue');
+  },
+  click: function() {
+    $(this).css('background-color', 'yellow')
+  }
+})
+
+    $("input").focus(function() {
+      $(this).css("background-color", "yellow");
+    });
+    $("input").blur(function() {
+      $(this).css({
+        "background-color": "black",
+        "color": "white"
+      })
+    })
+    $("p").on("click", function(){
+      $(this).hide()
+    })
+  })
+</script>
+</body>
+</html>
